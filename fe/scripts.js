@@ -14,7 +14,7 @@ function add(productId, price) {
 
   // Agregar el producto al carrito tantas veces como cantidad seleccionada
   for (let i = 0; i < quantity; i++) {
-    order.items.push(product);
+    order.items.push(product); 
     carrito.push(productId);
   }
   
@@ -57,15 +57,16 @@ async function showOrder() {
   let productsHTML = `
     <tr>
         <th>Num. Art.</th>
+        <th>Articulo</th>        
         <th>Detalle</th>
         <th>Cantidad</th>
     </tr>`;
   order.items.forEach((p) => {
     productsHTML += `<tr>
             <td>${p.id}</td>
+            <td><img class="cart-item-image" src=${p.image}width="100" height="100"></td>       
             <td>${p.name}</td>
             <td><button id=buttonadd onclick="devolver(${p.id})">Remove</button> 1<div></div></td>
-
         </tr>`;
   });
   document.getElementById("order-table").innerHTML = productsHTML;
@@ -178,3 +179,4 @@ async function fetchProducts() {
 window.onload = async () => {
   await fetchProducts();
 };
+

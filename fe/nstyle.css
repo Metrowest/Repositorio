@@ -11,7 +11,7 @@
 body {
     padding-top: 80px;
     font-family: Lato;
-    background-color: #a4a4a487;
+    background-color: #a4a4a4;
     min-height: 100vh
 }
 
@@ -357,7 +357,7 @@ h1.title {
     border-radius: 20px;
     margin-right: auto;
     margin-left: auto;
-    width: 100%;
+    width: 1200px;
     display: flex;
     align-items: center;
     justify-content: space-evenly;
@@ -435,7 +435,7 @@ h2#section-header100:hover {
     margin-right: 25px;
     display: flex;
     margin-top: 20px;
-    margin-bottom: -15px;
+    margin-bottom: -7px;
 }
 
 .img4 {
