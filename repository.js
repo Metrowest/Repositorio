@@ -65,7 +65,6 @@ async function writeOrders(orders) {
   };
   const result = await sheets.spreadsheets.values.update({
     spreadsheetId: "1egsS3ocK2lvu6qkoVQy6iNZlyXmZZHxwhyLZIcmkjm4",
-    spreadsheetId: "1egsS3ocK2lvu6qkoVQy6iNZlyXmZZHxwhyLZIcmkjm4",
     range: "Orders!A2:G",
     valueInputOption: "RAW",
     resource,
